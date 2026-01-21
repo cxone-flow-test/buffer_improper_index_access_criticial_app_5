@@ -23,7 +23,7 @@ void print_array_ptr(int *array, int len) {
   }
 }
 
-void do_stuff(int *a, int *b) {
+__declspec(dllexport) void do_stuff(int *a, int *b) {
 
   for (int x = 0; x < MAX; x++)
     a[x] = x;
@@ -60,10 +60,4 @@ void do_stuff(int *a, int *b) {
   print_array(b, MAX + 1);
   print_array_ptr(b, MAX);
   print_array_ptr(b, MAX + 1);
-}
-
-int main(int argc, char *argv[]) {
-  // Shared library for critical function do_stuff
-
-
 }
