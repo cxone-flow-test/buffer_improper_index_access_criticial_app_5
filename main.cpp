@@ -67,10 +67,10 @@ int main(int argc, char *argv[]) {
   int foo[MAX], bar[MAX];
 
   // Same code as example 3, but this line was added.
-  do_stuff(foo, bar);
+  //do_stuff(foo, bar);
 
   // The program crashes here after running the previous line.
   // No results were emitted, apparently because of this one line
   // where the size of the buffers can't be determined.
-  do_stuff(NULL, NULL);
+  //do_stuff(NULL, NULL);
 }
