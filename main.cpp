@@ -63,14 +63,7 @@ void do_stuff(int *a, int *b) {
 }
 
 int main(int argc, char *argv[]) {
+  // Shared library for critical function do_stuff
 
-  int foo[MAX], bar[MAX];
 
-  // Same code as example 3, but this line was added.
-  //do_stuff(foo, bar);
-
-  // The program crashes here after running the previous line.
-  // No results were emitted, apparently because of this one line
-  // where the size of the buffers can't be determined.
-  //do_stuff(NULL, NULL);
 }
